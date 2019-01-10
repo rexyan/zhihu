@@ -6,15 +6,13 @@ export const AppHeader = styled.div`
     min-width: 1032px;
     overflow: hidden;
     background: #FFFFFF;
-    box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
+    box-shadow: 0 1px 0px rgba(26, 26, 26, 0.1);
     background-clip: content-box;
     display: block;
+    height: 50px;
 `;
 
 export const HeaderWrapper = styled.div`
-	position: relative;
-	height: 52px;
-	padding: 0 16px;
     margin: 0 auto;
     width: 1000px;
     display: flex;  
@@ -25,6 +23,32 @@ export const Svg = styled.svg`
 	fill: #0084FF;
 	height: 30px;
     width: 64px;
+
+    &.notification{
+    	fill: #76839B;
+    	width: 22px;
+    	height: 22px;
+    	margin-left: 130px;
+    }
+
+    &.comments{
+    	fill: #76839B;
+    	width: 22px;
+    	height: 22px;
+    	margin-left: 40px;
+    }
+`;
+
+export const UserImg = styled.a.attrs({
+	href: '/'
+})`
+	height: 30px;
+	width: 30px;
+	top: 0;
+	left: 0;
+	background: url(${props =>  props.imgSrc});
+	background-size: contain;
+	margin-left: 40px;
 `;
 
 export const Nav = styled.div`
@@ -91,9 +115,10 @@ export const Addition = styled.div`
 `
 
 export const Notifications = styled.div`
-	margin-right: 40px;
-	position: relative;
-    display: inline-block;
+	flex: 1;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
 `
 
 export const Button = styled.div`
@@ -107,21 +132,7 @@ export const Button = styled.div`
     background: none;
     border: 1px solid;
     border-radius: 3px;
-
-    &.pushnotifications-icon{
-    	border:1px solid red;
-	    padding: 0;
-	    line-height: inherit;
-	    background-color: transparent;
-	    border: none;
-	    border-radius: 0
-    }
 `
-export const NotificationSvg = styled.svg`
-    width: 22;
-    height: 22;
-`;
-
 
 export const Searchinfo = styled.div`
 	position: absolute;

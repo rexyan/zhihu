@@ -16,38 +16,14 @@ import {
 
 class Home extends Component {
 
-	hancleCcrollTop(){
-		window.scrollTo(0, 0)
-	}
-
 	render(){
 		return (
-			<HomeWrapper> 
-				<HomeLeft> 
-					<img alt='' className='banner-img' src='https://upload.jianshu.io/admin_banners/web_images/4520/83fadd2df821d52fb277287ac4a189e8d21b7b65.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/1250/h/540' />
-					<Topic />
-					<List/>
-				</HomeLeft>
-				<HomeRight> 
-					<Recommend/>
-					<Writer/>
-				</HomeRight>
-				<BackTop onClick={ this.hancleCcrollTop }> 顶部 </BackTop>
-			</HomeWrapper>
+			"index"
 		)
 	}
 
-	componentDidMount(){
-		this.props.changeHomeData()
-	}
 }
 
-const mapDispatch = (dispatch) => ({
-	changeHomeData(){
-		const action = actionCreators.getHomeInfo()
-		dispatch(action)
-	}
-})
 
 
-export default connect(null, mapDispatch)(Home);
+export default connect(null, null)(Home);
