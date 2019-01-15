@@ -13,7 +13,6 @@ export const Topstory = styled.div`
 
 export const TopstoryContainer = styled.div`
 	overflow: hidden
-	border: 1px solid red;
 	display: flex;
     align-items: flex-start;
     width: 1000px;
@@ -25,7 +24,7 @@ export const TopstoryMainColumn = styled.div`
 	flex-shrink: 0;
     margin-right: 10px;
     margin-bottom: 0;
-    width: 694px
+    width: 694px;
 `;
 
 export const TopstoryTabCard = styled.div`
@@ -52,7 +51,7 @@ export const TabCardUl = styled.ul`
     border-bottom: none;
 `;
 
-export const TabCardLi = styled.div`
+export const TabCardLi = styled.li`
 	display: inline-block;
     padding: 0 20px;
     list-style-type: none;
@@ -104,6 +103,23 @@ export const DivLabel = styled.div`
 	    color: #8590A6;
 	    font-size: 12px;
 	};
+
+	&.bopstory-content{
+		min-height: 100vh;
+	}
+
+	&.topstoryitem{
+		margin-bottom: 0;
+    	box-shadow: none;
+    	border-bottom: 1px solid #F0F2F7;
+    	padding: 20px;
+    	position: relative;
+    	background: #FFFFFF;
+    	overflow: hidden;
+    	border-radius: 2px;
+    	box-sizing: border-box;
+	}
+
 `;
 
 
@@ -140,7 +156,24 @@ export const SvgLabel = styled.svg`
 
 `;	
 
-
+export const ContentItemtitle = styled.h2`
+	font-size: 18px;
+    font-weight: 600;
+    font-synthesis: style;
+    line-height: 1.6;
+    color: #1A1A1A;
+    margin-top: -4px;
+    margin-bottom: -4px;
+    margin: 0;
+    font: inherit;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+`;
 
 
 

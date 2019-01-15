@@ -13,7 +13,8 @@ import {
 	TabCardLi,
 	ALabel,
 	DivLabel,
-	SvgLabel
+	SvgLabel,
+	ContentItemtitle
 } from './style';
 
 
@@ -32,7 +33,23 @@ class Home extends Component {
 									<TabCardLi> 热榜 </TabCardLi>
 								</TabCardUl>
 							</TopstoryTabCard>
+						
+							<DivLabel className="bopstory-content">
+								<DivLabel>
+									<DivLabel className="topstoryitem">
+										<ContentItemtitle> 如何看待「女子纱布入腹死亡」被定性为一级甲等医疗事故？谁应该承担主要责任？ </ContentItemtitle>
+									</DivLabel>
+
+									<DivLabel className="RichContent">
+										
+									</DivLabel>
+
+								</DivLabel>
+							</DivLabel>
+
 						</TopstoryMainColumn>
+
+						
 
 					<DivLabel className="card">
 						<DivLabel className="globalwrite-nav">
