@@ -120,6 +120,19 @@ export const DivLabel = styled.div`
     	box-sizing: border-box;
 	}
 
+	&.richcontent{
+		line-height: 1.67;
+	}
+
+	&.contentitem-actions{
+		display: flex;
+	    align-items: center;
+	    padding: 10px 20px;
+	    margin: 0 -20px -10px;
+	    color: #646464;
+	    background: #FFFFFF;
+	    clear: both;
+	}
 `;
 
 
@@ -139,6 +152,21 @@ export const ALabel = styled.a`
 	    height: 40px;
 	    overflow: hidden;
 	}
+
+	&.tabs-link{
+		position: relative;
+	    display: inline-block;
+	    padding: 14px 0;
+	    font-size: 16px;
+	    line-height: 38px;
+	    color: #1A1A1A;
+	    text-align: center;
+	}
+
+	&.is-active{
+		font-weight: 600;
+    	font-synthesis: style;
+	}
 `;
 
 export const SvgLabel = styled.svg`
@@ -154,12 +182,24 @@ export const SvgLabel = styled.svg`
     	height: 18px;
 	}
 
+	&.triangleup{
+    	width: 10px;
+    	height: 10px;
+	}
+
+	&.triangledown{
+    	width: 10px;
+    	height: 10px;
+	}
+
+	&.comment-button{
+		width: 17px;
+    	height: 17px;
+		margin-right: 4px;
+	}
 `;	
 
 export const ContentItemtitle = styled.h2`
-	font-size: 18px;
-    font-weight: 600;
-    font-synthesis: style;
     line-height: 1.6;
     color: #1A1A1A;
     margin-top: -4px;
@@ -167,13 +207,69 @@ export const ContentItemtitle = styled.h2`
     margin: 0;
     font: inherit;
     display: block;
-    font-size: 1.5em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    font-size: 18px;
 `;
 
+export const ButtonLabel = styled.button`
+	&.contentitem-more{
+		padding: 0;
+    	margin-left: 4px;
+    	color: #175199;
+    	height: auto;
+	    padding: 0;
+	    line-height: inherit;
+	    background-color: transparent;
+	    border: none;
+	    border-radius: 0;
+	}
 
+	&.votebutton-up{
+	    color: #0084FF;
+	    background: rgba(0, 132, 255, 0.1);
+	    border-color: transparent;
+	    line-height: 30px;
+    	padding: 0 12px;
+    	display: inline-block;
+	}
+
+	&.votebutton-down{
+		line-height: 30px;
+    	padding: 0 12px;
+    	margin-left: 4px;
+    	color: #0084FF;
+    	background: rgba(0, 132, 255, 0.1);
+    	border-color: transparent;
+	}
+
+	&.contentitem-action{
+		margin-left: 24px;
+    	font-size: 14px;
+    	padding: 0;
+        height: auto;
+    	line-height: inherit;
+    	background-color: transparent;
+    	border: none;
+    	border-radius: 0;
+    	display: inline-block;
+	}
+`;
+
+export const SpanLabel = styled.span`
+	&.votebutton-up-span{
+		display: inline-flex; 
+		align-items: center;
+	}
+
+	&.votebutton-down-span{
+		display: inline-flex; 
+		align-items: center;
+	}
+
+
+`;
 

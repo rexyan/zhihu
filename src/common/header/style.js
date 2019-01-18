@@ -6,7 +6,7 @@ export const AppHeader = styled.div`
     min-width: 1032px;
     overflow: hidden;
     background: #FFFFFF;
-    box-shadow: 0 1px 0px rgba(26, 26, 26, 0.1);
+    box-shadow: 0px 10px 3px rgba(246, 246, 246, 1);
     background-clip: content-box;
     display: block;
     height: 50px;

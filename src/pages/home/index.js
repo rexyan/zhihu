@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { actionCreators } from './store'
-import { BackTop } from './style'
 
 import { 
 	HomeWrapper,
@@ -14,6 +13,8 @@ import {
 	ALabel,
 	DivLabel,
 	SvgLabel,
+	ButtonLabel,
+	SpanLabel,
 	ContentItemtitle
 } from './style';
 
@@ -24,32 +25,72 @@ class Home extends Component {
 		return (
 			<HomeWrapper>
 				<Topstory>
-					<TopstoryContainer>
+					<TopstoryContainer className="111">
 						<TopstoryMainColumn>
 							<TopstoryTabCard>
 								<TabCardUl>
-									<TabCardLi> 推荐 </TabCardLi>
-									<TabCardLi> 关注 </TabCardLi>
-									<TabCardLi> 热榜 </TabCardLi>
+									<TabCardLi>
+										<ALabel className="tabs-link is-active">
+											推荐
+										</ALabel>
+									</TabCardLi>
+									<TabCardLi>
+										<ALabel className="tabs-link">
+											关注
+										</ALabel>
+									</TabCardLi>
+									<TabCardLi>
+										<ALabel className="tabs-link">
+											热榜
+										</ALabel>
+									</TabCardLi>
 								</TabCardUl>
 							</TopstoryTabCard>
 						
 							<DivLabel className="bopstory-content">
 								<DivLabel>
 									<DivLabel className="topstoryitem">
-										<ContentItemtitle> 如何看待「女子纱布入腹死亡」被定性为一级甲等医疗事故？谁应该承担主要责任？ </ContentItemtitle>
-									</DivLabel>
-
-									<DivLabel className="RichContent">
+										<ContentItemtitle> 如何评价火车票抢票软件加速包的存在？ </ContentItemtitle>
 										
-									</DivLabel>
+										<DivLabel className="richcontent">
+											justjavac： 有必要使用 SSR 吗？不一定，看需求。 有必要去研究吗？有。技多不压身。 最近看了一下 nextjs 感觉回到 jsp 或者 ph…
+											<ButtonLabel className="contentitem-more"> 阅读全文 </ButtonLabel>
+										</DivLabel>
 
+										<DivLabel className="contentitem-actions">
+											<SpanLabel>
+												<ButtonLabel className="votebutton-up">
+													<SpanLabel className="votebutton-up-span">
+														<SvgLabel className="triangleup" viewBox="0 0 24 24">
+															<path d="M2 18.242c0-.326.088-.532.237-.896l7.98-13.203C10.572 3.57 11.086 3 12 3c.915 0 1.429.571 1.784 1.143l7.98 13.203c.15.364.236.57.236.896 0 1.386-.875 1.9-1.955 1.9H3.955c-1.08 0-1.955-.517-1.955-1.9z" fill-rule="evenodd"></path>
+														</SvgLabel>
+													</SpanLabel>
+													赞同 
+												</ButtonLabel>
+
+												<ButtonLabel className="votebutton-down">
+													<SpanLabel className="votebutton-down-span">
+														<SvgLabel className="triangledown" viewBox="0 0 24 24">
+															<path d="M20.044 3H3.956C2.876 3 2 3.517 2 4.9c0 .326.087.533.236.896L10.216 19c.355.571.87 1.143 1.784 1.143s1.429-.572 1.784-1.143l7.98-13.204c.149-.363.236-.57.236-.896 0-1.386-.876-1.9-1.956-1.9z" fill-rule="evenodd"></path>
+														</SvgLabel>
+													</SpanLabel>
+												</ButtonLabel>
+											</SpanLabel>
+											<ButtonLabel className="contentitem-action">
+												<SpanLabel className="votebutton-up-span">
+													<SvgLabel className="comment-button" viewBox="0 0 24 24">
+														<path d="M10.241 19.313a.97.97 0 0 0-.77.2 7.908 7.908 0 0 1-3.772 1.482.409.409 0 0 1-.38-.637 5.825 5.825 0 0 0 1.11-2.237.605.605 0 0 0-.227-.59A7.935 7.935 0 0 1 3 11.25C3 6.7 7.03 3 12 3s9 3.7 9 8.25-4.373 9.108-10.759 8.063z" fill-rule="evenodd"></path>
+													</SvgLabel>
+												</SpanLabel>
+												325 条评论
+											</ButtonLabel>
+
+										</DivLabel>
+
+									</DivLabel>
 								</DivLabel>
 							</DivLabel>
-
 						</TopstoryMainColumn>
-
-						
 
 					<DivLabel className="card">
 						<DivLabel className="globalwrite-nav">
